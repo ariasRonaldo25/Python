@@ -18,6 +18,8 @@ frutasLista = list(frutas)
 frutasLista[0] = 'Pera'
 frutas = tuple(frutasLista)
 print('\n',frutas)
+# revisar si un elemento está presente
+print('Plátano' in frutas)
 #eliminar la tupla
 del frutas
 print(frutas)

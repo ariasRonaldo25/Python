@@ -39,6 +39,8 @@ print(nombres)
 # eliminar un indice
 del nombres[0]
 print(nombres)
+# revisar si un elemento está presente
+print('Juan' in nombres)
 # limpiar la lista
 nombres.clear()
 print(nombres)
