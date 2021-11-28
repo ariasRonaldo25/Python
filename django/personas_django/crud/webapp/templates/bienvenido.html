@@ -7,14 +7,18 @@
 <body>
 <h1> Sistema de administración de personas. (SAP)</h1>
 
-#<div>
-    #{{msj1}}
-#</div>
+
 
 <div>
    Número de personas: {{no_personas}}
 </div>
 
-
+<div>
+    <ul>
+        {% for persona in personas %}
+        <li>Persona {{persona.id}}: {{persona.nombre}} {{persona.apellido}} {{persona.email}} </li>
+        {% endfor %}
+    </ul>
+</div>
 </body>
 </html>
