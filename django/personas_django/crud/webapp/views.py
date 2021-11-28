@@ -4,7 +4,9 @@ from django.shortcuts import render
 # Create your views here.
 
 def bienvenido(request):
-    return render(request,'Bienvenido.html')
 
-def despedirse(request):
-    return HttpResponse('Adiós mundo desde django')
+    mensajes={ 'msj1': 'valor mensaje1', 'msj2': 'valor mensaje2' }
+    return render(request,'Bienvenido.html',mensajes)
+
+#def despedirse(request):
+ #   return HttpResponse('Adiós mundo desde django')
