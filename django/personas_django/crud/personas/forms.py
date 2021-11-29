@@ -9,6 +9,7 @@ class PersonaForm(ModelForm):
         model= Persona
         fields='__all__'
         widgets={
+
             'email': EmailInput(attrs= { 'type': 'email' })
         }
 
