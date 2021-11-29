@@ -18,7 +18,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import path
 
-from personas.views import detallePersonas, nuevaPersona, editarPersona
+from personas.views import detallePersonas, nuevaPersona, editarPersona, eliminarPersona
 from webapp.views import bienvenido
 
 
@@ -29,6 +29,7 @@ urlpatterns = [
     path('detalle_persona/<int:id>', detallePersonas),
     path('nueva_persona', nuevaPersona),
     path('editar_persona/<int:id>', editarPersona),
+    path('eliminar_persona/<int:id>',eliminarPersona),
 
 ]
 
