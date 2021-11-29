@@ -18,18 +18,16 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import path
 
-from personas.views import detallePersonas
+from personas.views import detallePersonas, nuevaPersona
 from webapp.views import bienvenido
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', bienvenido),
+    path('', bienvenido, name='index'),
     #path('/despedirse', despedirse)
-    path('detalle_persona/<int:id>', detallePersonas)
-
-
-
+    path('detalle_persona/<int:id>', detallePersonas),
+    path('nueva_persona', nuevaPersona)
 
 ]
 
